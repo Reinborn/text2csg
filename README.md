@@ -6,11 +6,10 @@ This project extends and reimplements components of DeepCAD and Text2CAD, but fe
 
 ## ✨ Key Features
 
-- CSG Tokenizer and Token Embedding
-- Tree-Guided Attention with Parent and Sibling Masks
-- Structure-aware Loss Functions
-- Text-to-CSG Integration Pipeline
-
+- CSG Tokenizer and Token Embedding  
+- Tree-Guided Attention with Parent and Sibling Masks  
+- Structure-aware Loss Functions  
+- Text-to-CSG Integration Pipeline  
 
 ## 📦 Dataset & Supplementary Files
 
@@ -21,4 +20,6 @@ This repository includes two ZIP archives that support training and evaluation:
 | `csg_dataset.zip` | A symbolic CSG dataset containing structured geometry programs in XML format. These are parsed into tokens and used as ground-truth for training the CSG decoder. |
 | `text2csg_content.zip` | A collection of natural language descriptions paired with CSG models, useful for training the text-conditioned generation pipeline. |
 
+## 📚 Code Attribution
 
+The text-conditioned generation component in this project builds upon the open-source [Text2CAD](https://github.com/yining043/text2cad) repository. Relevant modules were adapted and extended to support symbolic CSG representations. All core CSG modeling logic, token supervision, and structural attention mechanisms were independently implemented.
